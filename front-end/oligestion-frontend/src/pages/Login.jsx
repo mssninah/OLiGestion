@@ -142,7 +142,7 @@ export default function Login() {
               fontWeight: "500",
             }}
           >
-            👤 Nom d'utilisateur
+            Nom d'utilisateur
           </label>
         </div>
 
@@ -191,7 +191,7 @@ export default function Login() {
               fontWeight: "500",
             }}
           >
-            🔒 Mot de passe
+            Mot de passe
           </label>
         </div>
 
