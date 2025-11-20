@@ -1,6 +1,7 @@
 package com.oli.mada.entity;
 
 import jakarta.persistence.*;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "\"user\"") // mot réservé SQL → besoin de guillemets
@@ -24,7 +25,7 @@ public class User {
     private Role role;
 
     @Column(name = "created_at")
-    private java.time.LocalDateTime createdAt = java.time.LocalDateTime.now();
+    private LocalDateTime createdAt = LocalDateTime.now();
 
     // Getters & setters
     public Long getId() {

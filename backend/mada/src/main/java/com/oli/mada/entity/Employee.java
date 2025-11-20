@@ -2,6 +2,7 @@ package com.oli.mada.entity;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "employee")
@@ -25,7 +26,7 @@ public class Employee {
     private boolean active = true;
 
     @Column(name = "created_at")
-    private java.time.LocalDateTime createdAt = java.time.LocalDateTime.now();
+    private LocalDateTime createdAt = LocalDateTime.now();
 
     // Getters & setters
     public Long getId() {
