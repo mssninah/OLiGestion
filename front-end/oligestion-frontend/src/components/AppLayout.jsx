@@ -1,7 +1,9 @@
 import { NavLink, Outlet } from "react-router-dom";
+import logo from "../assets/logo/logo.png";
 
 const navItems = [
   { to: "/", label: "Dashboard" },
+  { to: "/products", label: "Produits" },
   { to: "/room", label: "Studio chambre" },
 ];
 
@@ -9,10 +11,10 @@ const AppLayout = () => (
   <div className="app-shell">
     <header className="dashboard-header">
       <div className="brand">
-        <div className="logo-circle">OL</div>
+        <img src={logo} alt="OLi Studio" className="logo-img" />
         <div>
-          <strong>OLiGestion</strong>
-          <span>Intérieurs & mobilier</span>
+          <strong>OLi Studio </strong>
+          <span>Prenons soin de vous </span>
         </div>
       </div>
       <div className="header-actions">
